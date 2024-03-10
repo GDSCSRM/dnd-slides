@@ -1,6 +1,10 @@
 import Button from "./button";
 import { useLocation, useNavigate } from "@remix-run/react";
 
+interface NavigationButtonsProps {
+  hideCenterButton?: boolean;
+}
+
 export const content = [
   {
     title: "React",
@@ -11,8 +15,8 @@ export const content = [
     link: "/content/01-meta-frameworks",
   },
   {
-    title: "SSG vs SSR",
-    link: "/content/02-ssg-vs-ssr",
+    title: "CSR vs SSR",
+    link: "/content/02-csr-vs-ssr",
   },
   {
     title: "Rendering & Hydration",
@@ -74,9 +78,17 @@ const pages = [
     link: "/content",
   },
   ...content,
+  {
+    title: "End Notes",
+    link: "/end-notes",
+  },
+  {
+    title: "Thank You",
+    link: "/thank-you",
+  }
 ];
 
-export default function NavigationButtons() {
+export default function NavigationButtons({ hideCenterButton }: NavigationButtonsProps) {
   const navigate = useNavigate();
   const { pathname } = useLocation();
 
@@ -91,7 +103,7 @@ export default function NavigationButtons() {
           &larr; Previous: {prevPage.title}
         </Button>
       )}
-      <Button onClick={() => navigate("/content")}>Back to Contents</Button>
+      {!hideCenterButton && <Button onClick={() => navigate("/content")}>Back to Contents</Button>}
       {nextPage && (
         <Button onClick={() => navigate(nextPage.link)}>
           Next: {nextPage.title} &rarr;

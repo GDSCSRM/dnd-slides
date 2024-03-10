@@ -6,19 +6,19 @@ interface LayoutProps {
   title: string;
   description?: string;
   children: ReactNode;
-  hideButtons?: boolean;
+  hideCenterButton?: boolean;
 }
 
 export default function Layout({
   title,
   description,
   children,
-  hideButtons = false,
+  hideCenterButton,
 }: LayoutProps) {
   const navigate = useNavigate();
 
   return (
-    <div className="flex flex-col min-h-screen justify-between gap-5 p-16">
+    <div className="flex flex-col min-h-screen justify-between gap-10 p-16">
       <main className="flex flex-col gap-5">
         <div className="flex flex-col gap-2">
           <h1 className="text-3xl font-bold">{title}</h1>
@@ -32,7 +32,7 @@ export default function Layout({
         <Link to="/">
           <img src="/gdsc.png" className="w-12" />
         </Link>
-        {!hideButtons && <NavigationButtons />}
+        <NavigationButtons hideCenterButton={hideCenterButton} />
         <img src="/remix.svg" className="w-12" />
       </footer>
     </div>

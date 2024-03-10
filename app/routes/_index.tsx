@@ -11,9 +11,11 @@ export const meta: MetaFunction = () => {
 
 export default function Index() {
   const navigate = useNavigate();
+
   return (
     <div className="flex flex-col h-screen justify-between">
       <main className="flex flex-col flex-grow items-center justify-center">
+        <img src="/remix.svg" alt="Design & Develop" className="w-80" />
         <h1 className="text-3xl font-bold">Design & Develop</h1>
         <p className="text-lg mb-5">
           Learn{" "}
