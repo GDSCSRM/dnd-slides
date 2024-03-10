@@ -18,7 +18,7 @@ export default function ExampleMetaFrameworks() {
           "But react.dev recommends using a framework so it is easier to get started",
           "Simplifies the process of building a production-ready React application",
           "Frameworks provides solutions for common problems like routing, state management and more",
-          "Few popular react frameworks are Next.js, Gatsby, Remix and more",
+          "Few popular react frameworks include Next.js, Gatsby, Remix",
         ]}
       />
     </Layout>

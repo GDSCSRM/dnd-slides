@@ -28,7 +28,7 @@ export default function ContentUseLoaderData() {
         ]}
       />
       <Code>{useLoaderDataExample}</Code>
-      Action Data: <pre>{JSON.stringify(data)}</pre>
+      Loader Data: <pre>{JSON.stringify(data)}</pre>
     </Layout>
   );
 }
