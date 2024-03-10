@@ -16,6 +16,17 @@ export default function MyComponent() {
   // Display the data
 }`;
 
+export const formExample = `import { Form } from "@remix-run/react";
+
+<Form method="POST"">
+  <input
+    type="text"
+    name="name"
+    placeholder="Your name"
+  />
+  <button type="submit">Submit</button>
+</Form>`;
+
 export const actionsExample = `import type { ActionFunction } from "@remix-run/react";
 import { json } from "@remix-run/node";
 
