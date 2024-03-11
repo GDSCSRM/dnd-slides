@@ -18,7 +18,7 @@ export default function MyComponent() {
 
 export const formExample = `import { Form } from "@remix-run/react";
 
-<Form method="POST"">
+<Form method="POST">
   <input
     type="text"
     name="name"

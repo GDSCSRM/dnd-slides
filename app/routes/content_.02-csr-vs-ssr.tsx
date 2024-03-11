@@ -3,7 +3,7 @@ import type { MetaFunction } from "@remix-run/react";
 import List from "~/components/list";
 
 export const meta: MetaFunction = () => [
-  { title: "Design & Develop | SSG vs SSR" },
+  { title: "Design & Develop | CSR vs SSR" },
 ];
 
 export default function ContentSsgVsSsr() {

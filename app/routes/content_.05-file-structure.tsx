@@ -33,7 +33,7 @@ export default function ContentFileStructure() {
             <kbd>root.tsx</kbd> The entry point of the application
           </span>,
           <span>
-            <kbd>_index.tsx</kbd> The home page of the application
+            <kbd>routes/_index.tsx</kbd> The home page of the application
           </span>,
           <span>
             <kbd>*.server.ts</kbd> Excludes the file in the client bundle

@@ -79,6 +79,10 @@ const pages = [
   },
   ...content,
   {
+    title: "Setup",
+    link: "/setup",
+  },
+  {
     title: "End Notes",
     link: "/end-notes",
   },
