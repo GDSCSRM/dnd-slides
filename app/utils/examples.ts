@@ -30,7 +30,7 @@ export const formExample = `import { Form } from "@remix-run/react";
 export const actionsExample = `import type { ActionFunction } from "@remix-run/react";
 import { json } from "@remix-run/node";
 
-export const loader: LoaderFunction = async ({ request }) => {
+export const action: ActionFunction = async ({ request }) => {
   const formData = await request.formData();
 
   // Do something with the form data
