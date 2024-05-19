@@ -22,7 +22,7 @@ export default function Me() {
       <div className="flex gap-2 items-center">
         <a href="https://github.com/sa-sami"><Github width={20} /></a>
         <a href="https://www.linkedin.com/in/sm-sami/"><Linkedin width={20} /></a>
-        <a href="https://www.instagram.com/sm_sami.ts/"><Instagram width={20} /></a>
+        <a href="https://www.instagram.com/siamasdev/"><Instagram width={20} /></a>
         <a href="https://twitter.com/siamasdev"><Twitter /></a>
         <a href="https://gitlab.com/sm-sami"><Gitlab width={20} /></a>
         <a href="https://github.com/mhmdsami"><Github width={20} /></a>
